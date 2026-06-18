@@ -1,37 +1,64 @@
-# Node dependencies
+# === Node ===
 node_modules/
-
-# Logs
-logs/
-*.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-# Environment files
+# Lockfiles (optional: commit if you prefer)
+package-lock.json
+yarn.lock
+
+# === Environment ===
 .env
 .env.local
 .env.*.local
 
-# Build outputs
+# === Build / output ===
 dist/
 build/
 public/build/
 .vite/
 .cache/
+out/
 
-# Coverage
+# === Coverage ===
 coverage/
 
-# OS files
+# === Logs ===
+logs/
+*.log
+
+# === OS generated files ===
 .DS_Store
 Thumbs.db
+ehthumbs.db
+Icon?
 
-# IDEs and editors
+# === IDEs / Editors ===
 .vscode/
 .idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
 
-# Misc
+# === Misc / Temporary ===
 *.sqlite
 *.db
+*.tgz
 .sourcemaps
+*.log
+
+# === Frontend tooling ===
+/.parcel-cache/
+/.next/
+/.nuxt/
+/.cache/
+
+# Ignore local VS Code extensions settings
+.vscode-test/
+
+# OneDrive / Sync files
+~$*
+
+# End of file
